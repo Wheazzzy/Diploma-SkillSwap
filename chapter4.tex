@@ -8,6 +8,7 @@
 
 During the development of our products based on the mutually beneficial exchange of skills and not only this project was divided into some component parts: the \nameref{des} development process starting with wire-frames, pumping the main application design further UX/UI, the process of website design is underway to compile the visual part of the site for mobile adaptation \nameref{front}, beautiful animation, for better interaction on the website, further work is underway on \nameref{back} part is the development of functions for the operation of the site, and this is our registration form, login, chat, rating, user setup, responding to different skills, donation system search process, filters, sorting and much more and the most important deployment of the web hosting project on Amazon Web Service \cite{aws} \nameref{back} is also an \nameref{ios} - based application for mobile phones using the web view function as similar to its analogues kaspi.kz \cite{kaspi}. Let us take a closer look at every aspect of this project, namely web \nameref{des}, mobile development \nameref{ios}, and \nameref{qa} of this product writing test cases, as well as all screenshots the links will be attached below this document in -  \nameref{app:AA}.
 
+\newpage
 \section{User Flow}\label{usrflow}
 Our user flow show \cite{miro} that the simple steps that the user performs in our application.
 The purpose of this user flow \cite{miro} is to give users the opportunity to use our SkillSwap \cite{skillswap} platform in the most effective way.
@@ -28,14 +29,14 @@ The user is prompted to enter a valid email address.
 
 \begin{figure}[ht]\label{fig:userflow1}
   \centering
-  \includegraphics[width=0.8\linewidth]{figures/Userflow -2.png}
-  \caption{The screenshot of our userflow - 1.}
+  \includegraphics[width=1\linewidth]{figures/Userflow -2.png}
+  \caption{First type of userflow.}
 \end{figure}
 
 \begin{figure}[ht]\label{fig:userflow2}
   \centering
   \includegraphics[width=0.8\linewidth]{figures/Userflow - 1.png}
-  \caption{The screenshot of our userflow - 2.}
+  \caption{Second type of userflow.}
 \end{figure}
 
 \newpage
@@ -204,11 +205,8 @@ Form Fields:
  The \nameref{ios} application gives users convenient access to your service functionality on Apple devices, allowing them to interact with the community, share skills, and create new opportunities.System Requirements: Supports \nameref{ios} version 13.0 or higher. Internet connection is also required for the app to work. Install and Run: Users can install it on their devices using the App Store or join the beta testing through TestFlight \cite{testflight}. \textit{User Interface}: The application interface is friendly and intuitive. Users can easily create posts, search for skills or ask questions using simple and straight forward controls. \textit{Application functionality:} Users can register, log in and create posts in various categories such as SkillSwap \cite{skillswap}, Crowdfund and Questions. The app provides the ability to share skills, fundraise for projects and ask questions to the community. \nameref{back} and \nameref{front} integration: The application interacts with the \nameref{back} and \nameref{front}, providing data transfer and request processing via API.
 
 \section{Quality Assurance}\label{qa}
-The testing process of our project began with the implementation of the \nameref{front} carcass. As the \nameref{qa}, we initiated the creation of basic UI test cases to ensure the visual correctness aligns with the approved design by our team. Once the \nameref{back} was implemented and integrated to the \nameref{front} end by our developer, It was decided to provide end-to-end testing to ensure effective validation of each functionality. Meaning of end-to-end testing is conducting tests to every possible user interaction, from registration to login and beyond, across the entirety of the platform.
+The testing process of our project began with the implementation of the \nameref{front} carcass. As the \nameref{qa}, we initiated the creation of basic UI test cases to ensure the visual correctness aligns with the approved design by our team. Once the \nameref{back} was implemented and integrated to the \nameref{front} end by our developer, It was decided to provide end-to-end testing to ensure effective validation of each functionality. Meaning of end-to-end testing is conducting tests to every possible user interaction, from registration to login and beyond, across the entirety of the platform. Subsequently, We conducted mobile testing to assess the platform's responsiveness. Finally, User Acceptance Testing (UAT) was carried out, marking the concluding phase of testing overseen by me. Additionally, routine code reviews and smoke tests were conducted by both our developers and the project manager to ensure quality and functionality
 
-Subsequently, We conducted mobile testing to assess the platform's responsiveness. Finally, User Acceptance Testing (UAT) was carried out, marking the concluding phase of testing overseen by me. Additionally, routine code reviews and smoke tests were conducted by both our developers and the project manager to ensure quality and functionality
-
-\newpage
 \section{Architecture}\label{arch}
 The project is a web application designed to facilitate communication and collaboration between students, allowing them to create posts, ask questions, and participate in skill-based exchanges.
 \begin{enumerate}
@@ -289,6 +287,7 @@ The project is a web application designed to facilitate communication and collab
 \item \textit{The posts} table allows students to create, update, and delete posts. Each post can have an associated application functionality, where students can apply for a post to buy or exchange skills. The table includes columns for description, image, title, and status.
 \end{itemize}
 
+\newpage
 \item \textbf{Questions Table}
 
 \begin{itemize}

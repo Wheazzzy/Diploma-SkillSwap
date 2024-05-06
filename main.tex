@@ -1,10 +1,8 @@
-\documentclass[a4paper,14pt]{extreport}
-\usepackage[T2A]{fontenc} 
-\usepackage[utf8]{inputenc} 
+\documentclass[a4paper,12pt]{extreport}
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
-\usepackage{float}
 
+\usepackage{float}
 \usepackage[russian,english]{babel}
 \usepackage{csquotes}
 \usepackage{amsmath}
@@ -16,11 +14,13 @@
 \usepackage{ragged2e}
 \usepackage{microtype}
 \usepackage{titlesec}
+
 \usepackage[hidelinks]{hyperref}
 \usepackage[style=numeric]{biblatex}
 \addbibresource{bibliography.bib}
-\usepackage{blindtext}
 
+
+\usepackage{blindtext}
 \usepackage{listings}
 \usepackage{xcolor}
 
@@ -47,18 +47,14 @@
     escapechar=|,
 }
 
-\titleformat{\chapter}[display]
-  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{14pt}{\Large}
+\setlength{\parindent}{1.25cm} % Установка отступа в 1.25 см
 
-  \titleformat{\chapter}[display]
-{\normalfont\huge\bfseries}{\Large\chaptertitlename\ \thechapter}{14pt}{\Large}
 
 \def\myauthor{Alexandr Ossipov, Daulet Lepessov, Nurlan Darzhanov, Saya Oryskhan}
 \def\mycoach{Ramis Akhmedov, PhD}
 \def\mytitle{The Application of SkillSwap}
 \def\mydegree{Bachelor in Information Systems}
-\def\mydegreecode{6B06101} 
-
+\def\mydegreecode{6B06101 } 
 
 \begin{document}
     \input{titlepage1}
@@ -82,5 +78,5 @@
     \input{appendixA}
     \input{appendixB}
 
-    \printbibliography[heading=bibintoc,title={References}]
+\printbibliography[heading=bibintoc,title={References}]
 \end{document}
